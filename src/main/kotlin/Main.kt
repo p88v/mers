@@ -1,14 +1,14 @@
-fun main(){
-// Денежные переводы
-//    val commissions = 0.0075
-//    val amount = 1_000_000
-//    val baseCommissions = 35
-//
-//    val result = amount * commissions
-//
-//    if(result < 35){
-//        println("Ваша комиссия составит: $baseCommissions")
-//    } else print("Ваша комиссия: $result")
+fun main() {
+    val likes = 21
 
+    val lastNumber = likes % 10
+
+    if(lastNumber == 1 && likes != 11){
+        println("Понравилось $likes человеку")
+    } else if(lastNumber != 1){
+        println("Понравилось $likes людям")
+    } else if(likes == 11){
+        println("Понравилось $likes людям")
+    }
 
 }
